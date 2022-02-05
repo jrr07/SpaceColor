@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "qlist.h"
+#include "Figure/Figure.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -13,8 +14,11 @@ class MainWindow : public QMainWindow
 
 private:
     Ui::MainWindow *ui;
+    QList<Figure*>list;
+    int drowType;
 
-
+protected:
+    void mousePressEvent(QMouseEvent *event);
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
@@ -27,5 +31,10 @@ private slots:
     void circleButtonPressed();
 
 
+
+
+
 };
+
+
 #endif // MAINWINDOW_H
