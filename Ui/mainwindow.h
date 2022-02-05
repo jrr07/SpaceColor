@@ -11,11 +11,21 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
+private:
+    Ui::MainWindow *ui;
+
+
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private:
-    Ui::MainWindow *ui;
+
+
+private slots:
+    void nothingButtonPressed();
+    void lineButtonPressed();
+    void circleButtonPressed();
+
+
 };
 #endif // MAINWINDOW_H
