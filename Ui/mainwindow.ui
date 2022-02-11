@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="nothingButton">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>140</y>
+      <x>10</x>
+      <y>10</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QPushButton" name="lineButton">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>40</y>
+      <x>90</x>
+      <y>10</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -43,8 +43,8 @@
    <widget class="QPushButton" name="circleButton">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>110</y>
+      <x>170</x>
+      <y>10</y>
       <width>75</width>
       <height>23</height>
      </rect>

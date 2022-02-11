@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     ,ui(new Ui::MainWindow)
 {
-    this->drowType = 0;
+    this->drawType = 0;
 
     ui->setupUi(this);
 
@@ -23,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 }
 
+
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -30,7 +31,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::nothingButtonPressed(){
 
-    this->drowType = 0;
+    this->drawType = 0;
 
 
     cout << "nothing button pressed!" << endl;
@@ -39,22 +40,26 @@ void MainWindow::nothingButtonPressed(){
 
 void MainWindow::lineButtonPressed(){
 
-    this->drowType = 1;
 
+    this->drawType = 1;
+    cout << drawType << endl;
     cout << "line button pressed" << endl;
-
+    list.append(new Line(20,20,30,30,true));
 }
 
 
 void MainWindow::circleButtonPressed(){
 
-    this->drowType = 2;
-
+    this->drawType = 2;
+    cout << drawType << endl;
     cout << "circle button pressed" << endl;
-
+    list.append(new Circle(20,20,30,true));
 }
 
 void MainWindow::mousePressEvent(QMouseEvent *event){
-    cout << "mouse pressed " << event->x()<<  endl << event->y()  << endl;
+   cout << "mouse pressed " << event->x()<<  endl << event->y()  << endl;
+    if(this->drawType == 1) {
+
+    }
 }
 

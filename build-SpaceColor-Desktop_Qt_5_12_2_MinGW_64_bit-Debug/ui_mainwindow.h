@@ -34,13 +34,13 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         nothingButton = new QPushButton(centralwidget);
         nothingButton->setObjectName(QString::fromUtf8("nothingButton"));
-        nothingButton->setGeometry(QRect(240, 140, 75, 23));
+        nothingButton->setGeometry(QRect(10, 10, 75, 23));
         lineButton = new QPushButton(centralwidget);
         lineButton->setObjectName(QString::fromUtf8("lineButton"));
-        lineButton->setGeometry(QRect(470, 40, 75, 23));
+        lineButton->setGeometry(QRect(90, 10, 75, 23));
         circleButton = new QPushButton(centralwidget);
         circleButton->setObjectName(QString::fromUtf8("circleButton"));
-        circleButton->setGeometry(QRect(480, 110, 75, 23));
+        circleButton->setGeometry(QRect(170, 10, 75, 23));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
