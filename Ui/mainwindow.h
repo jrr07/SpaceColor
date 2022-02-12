@@ -6,6 +6,7 @@
 #include "Figure/Figure.h"
 #include "Figure/Line.h"
 #include "Figure/Circle.h"
+#include "Figure/Rectangle.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -22,6 +23,7 @@ private:
 
 protected:
     void mousePressEvent(QMouseEvent *event);
+    void paintEvent(QPaintEvent *event);
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
@@ -30,6 +32,7 @@ private slots:
     void nothingButtonPressed();
     void lineButtonPressed();
     void circleButtonPressed();
+    void rectangleButtonPressed();
 };
 
 
