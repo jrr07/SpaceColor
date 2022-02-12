@@ -12,6 +12,7 @@ SOURCES += \
     Figure/Circle.cpp \
     Figure/Figure.cpp \
     Figure/Line.cpp \
+    Figure/Rectangle.cpp \
     main.cpp \
     Ui/mainwindow.cpp
 
@@ -19,6 +20,7 @@ HEADERS += \
     Figure/Circle.h \
     Figure/Figure.h \
     Figure/Line.h \
+    Figure/Rectangle.h \
     Ui/mainwindow.h
 
 FORMS += \

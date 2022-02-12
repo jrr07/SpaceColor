@@ -24,6 +24,7 @@ public:
     QPushButton *nothingButton;
     QPushButton *lineButton;
     QPushButton *circleButton;
+    QPushButton *rectangleButton;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -34,13 +35,16 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         nothingButton = new QPushButton(centralwidget);
         nothingButton->setObjectName(QString::fromUtf8("nothingButton"));
-        nothingButton->setGeometry(QRect(240, 140, 75, 23));
+        nothingButton->setGeometry(QRect(10, 10, 75, 23));
         lineButton = new QPushButton(centralwidget);
         lineButton->setObjectName(QString::fromUtf8("lineButton"));
-        lineButton->setGeometry(QRect(470, 40, 75, 23));
+        lineButton->setGeometry(QRect(90, 10, 75, 23));
         circleButton = new QPushButton(centralwidget);
         circleButton->setObjectName(QString::fromUtf8("circleButton"));
-        circleButton->setGeometry(QRect(480, 110, 75, 23));
+        circleButton->setGeometry(QRect(170, 10, 75, 23));
+        rectangleButton = new QPushButton(centralwidget);
+        rectangleButton->setObjectName(QString::fromUtf8("rectangleButton"));
+        rectangleButton->setGeometry(QRect(250, 10, 75, 23));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -54,6 +58,7 @@ public:
         nothingButton->setText(QApplication::translate("MainWindow", "nothing", nullptr));
         lineButton->setText(QApplication::translate("MainWindow", "line", nullptr));
         circleButton->setText(QApplication::translate("MainWindow", "circle", nullptr));
+        rectangleButton->setText(QApplication::translate("MainWindow", "rectangle", nullptr));
     } // retranslateUi
 
 };

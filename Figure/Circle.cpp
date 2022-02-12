@@ -1,10 +1,13 @@
 #include "Circle.h"
 #include <iostream>
 
+
+
 Circle::Circle(){
     this->centerX = 0;
     this->centerY = 0;
-    this->radius = 1;
+    this->radius = 10;
+
 }
 
 Circle::Circle(int centerX, int centerY, int radius,bool color)
