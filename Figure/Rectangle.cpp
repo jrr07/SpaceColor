@@ -1,6 +1,6 @@
 #include "Rectangle.h"
 #include <iostream>
-
+#include <Math/myMath.h>
 Rectangle::Rectangle(){
     this->x = 0;
     this->y = 0;
@@ -45,6 +45,11 @@ int Rectangle::getWidth(){
 
 int Rectangle::getHeight(){
     return this ->height;
+}
+bool Rectangle::checkContain(int x, int y){
+    bool r = checkRectnagle(x,y,this->x,this->y,this->width,this->height);
+    return r;
+
 }
 Rectangle::~Rectangle(){
 

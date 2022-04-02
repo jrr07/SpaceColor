@@ -23,6 +23,7 @@ public:
     virtual void whoAreYou();
     void setData(int x, int y, int width, int height);
     void setData(int x, int y);
+    virtual bool checkContain(int x, int y);
 };
 
 

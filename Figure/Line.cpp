@@ -1,4 +1,5 @@
 #include "Line.h"
+#include "Math/myMath.h"
 #include <iostream>
 using namespace std;
 Line::Line(){
@@ -6,6 +7,7 @@ Line::Line(){
     this ->startY=0;
     this ->endX=0;
     this ->endY=0;
+
 }
 
 Line::Line(int startX, int startY, int endX, int endY, bool color )
@@ -36,6 +38,12 @@ int Line::getEndX(){
 int Line::getEndY(){
     return this -> endY;
 }
+bool Line::checkContain(int x, int y){
+    bool l = checkLine(x,y,this->startX,this->startY,this->endX,this->endY);
+    return l;
+}
+
+
 /*void Line::print(){
    std::cout << "Line:(" << this->startX << ", " << this->startY << ")->(" << this->endX << ", " << this->endY << ")" << std::endl;
 }

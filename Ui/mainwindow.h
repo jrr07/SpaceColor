@@ -17,12 +17,13 @@ class MainWindow : public QMainWindow
 
 private:
     Ui::MainWindow *ui;
-    QList<Figure*>list;
-
+    QList<Figure*> list;
+    QList<Figure*> selectedFigures;
     int drawType;
 
 protected:
     void mousePressEvent(QMouseEvent *event);
+    void keyPressEvent(QKeyEvent *event);
     void paintEvent(QPaintEvent *event);
 public:
     MainWindow(QWidget *parent = nullptr);

@@ -13,6 +13,7 @@ SOURCES += \
     Figure/Figure.cpp \
     Figure/Line.cpp \
     Figure/Rectangle.cpp \
+    Math/myMath.cpp \
     main.cpp \
     Ui/mainwindow.cpp
 
@@ -21,6 +22,7 @@ HEADERS += \
     Figure/Figure.h \
     Figure/Line.h \
     Figure/Rectangle.h \
+    Math/myMath.h \
     Ui/mainwindow.h
 
 FORMS += \

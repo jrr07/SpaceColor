@@ -12,6 +12,7 @@ public:
     bool getColor();
     virtual ~Figure() =0; //추상클래스 선언
     virtual void whoAreYou() = 0;
+    virtual bool checkContain(int x ,int y) =  0;
 };
 
 

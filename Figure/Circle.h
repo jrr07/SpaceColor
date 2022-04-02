@@ -20,6 +20,7 @@ public:
     void setData(int centerX,int centerY,int radius);
     void setData(int centerX);
     void setData(int centerX, int centerY);
+    virtual bool checkContain(int x, int y);
 };
 
 

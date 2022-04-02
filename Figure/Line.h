@@ -26,6 +26,7 @@ public:
     void setData(int startX,int  startY,int endX,int endY);
     void setData(int startX, int startY);
     void setData(int endX);
+    virtual bool checkContain(int x, int y);
 };
 
 

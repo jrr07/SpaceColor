@@ -1,6 +1,6 @@
 #include "Circle.h"
 #include <iostream>
-
+#include "Math/myMath.h"
 
 
 Circle::Circle(){
@@ -35,6 +35,10 @@ int Circle::getCenterY(){
 }
 int Circle::getRadius(){
     return this->radius;
+}
+bool Circle::checkContain(int x, int y){
+    bool c = checkCircle(x,y,this->centerX,this->centerY,this->radius);
+    return c;
 }
 Circle::~Circle(){
 
