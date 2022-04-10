@@ -89,7 +89,7 @@ void MainWindow::mousePressEvent(QMouseEvent *event){
     //1.1. drawtype이 1일ㄸㅐ
     if(this->drawType == 1) {
         //1.1.1. 라인을 생성하고 리스트에 넣는다
-        this->list.append(new Line(event->x(),event->y(),event->x() - 200 ,event->y() -40 ,true));
+        this->list.append(new Line(event->x(),event->y(),event->x() + 200 ,event->y() -111,true));
         //1.1.2. 화면을 갱신한다
         this->update();
     }
